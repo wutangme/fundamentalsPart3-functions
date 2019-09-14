@@ -5,26 +5,33 @@
 </head>
 <body>
   <script>
+/*Write a function called add7 that takes one number and returns that number + 7.*/
     function addSeven(num) { return num +7; }
-
     console.log(addSeven(3))
-
+/*Write a function called multiply that takes 2 numbers and returns their product.*/
     function multiply(num1,num2) {
        let x = num1 ;
        let y = num2 ;
        return x * y ; }
-
     console.log(multiply(9,8))
-
-
-
-
-
-
-
-
-    
-    
+/*Write a function called capitalize that takes a string and returns that 
+    string with only the first letter capitalized. Make sure that it can
+    take strings that are lowercase, UPPERCASE or BoTh. */
+    function capitalizeFirstLetter(str) {
+       let lowercaseChar = str.toLowerCase();
+       let firstLetter = str.charAt(0);
+       let capitalizeFirst = firstLetter.toUpperCase();
+       let lowercaseBody = lowercaseChar.substring(1);
+       return capitalizeFirst + lowercaseBody;
+    }
+    console.log(capitalizeFirstLetter("oDiNitE"))
+/*Write a function called lastLetter that takes a string and returns the very 
+    last letter of that string:lastLLetter("abcd") should return "d"*/
+    function lastLetter (str) {
+      let lastChar = str.slice(-1);
+      return lastChar;
+    }
+    console.log(lastLetter("abcd"))
   </script>
 </body>
 </html>
